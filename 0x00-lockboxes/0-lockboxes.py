@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Lockbox Interview Problem """
+
 
 def canUnlockAll(boxes):
 #determines whether an array of boxes holding keys can all be opened
