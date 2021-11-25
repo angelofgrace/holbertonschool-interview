@@ -1,6 +1,8 @@
 !/usr/bin/python3
+#Lockbox Interview Problem
 
 def canUnlockAll(boxes):
+#determines whether an array of boxes holding keys can all be opened
 
     # list comprehension to a dictionary for access
     box_dict = {box_i:box for box_i, box in enumerate(boxes)}
@@ -41,15 +43,4 @@ def canUnlockAll(boxes):
             box_to_search = next_box
 
     return True
-
-
-# canUnlockAll = __import__('0-lockboxes').canUnlockAll
-
-boxes = [[1], [2], [3], [4], []]
-print(canUnlockAll(boxes))
-
-boxes = [[1, 4, 6], [2], [0, 4, 1], [5, 6, 2], [3], [4, 1], [6]]
-print(canUnlockAll(boxes))
-
-boxes = [[1, 4], [2], [0, 4, 1], [3], [], [4, 1], [5, 6]]
-print(canUnlockAll(boxes))
+    
