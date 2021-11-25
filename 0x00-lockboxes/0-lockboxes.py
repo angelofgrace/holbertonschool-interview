@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+""" Lockboxes Algorithm Problem """
 
 
 def canUnlockAll(boxes):
-#determines whether an array of boxes holding keys can all be opened
+""" determines whether an array of boxes holding keys can all be opened """
 
     # list comprehension to a dictionary for access
     box_dict = {box_i:box for box_i, box in enumerate(boxes)}

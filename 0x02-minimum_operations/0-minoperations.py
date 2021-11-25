@@ -1,10 +1,10 @@
 #!/usr/bin/python3
-# Minimum Operations Algorithm Problem
+""" Minimum Operations Algorithm Problem """
 
 
 def minOperations(n: int) -> int:
-    # Calculates minimum number of operations required to create a string
-    # of input n length
+    """ Calculates minimum number of operations required to create a string """
+    """ of input n length """
 
     if not n or not isinstance(n, int) or n <= 1:
         return 0
