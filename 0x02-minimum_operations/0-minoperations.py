@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 # Minimum Operations Algorithm Problem
 
 
@@ -16,4 +16,3 @@ def minOperations(n: int) -> int:
             n /= count
             operations_list.append(count)
     return sum(operations_list)
-    
