@@ -1,4 +1,4 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 #Lockbox Interview Problem
 
 def canUnlockAll(boxes):
@@ -43,4 +43,3 @@ def canUnlockAll(boxes):
             box_to_search = next_box
 
     return True
-    
