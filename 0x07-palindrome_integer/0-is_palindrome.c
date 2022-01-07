@@ -14,13 +14,6 @@ int is_palindrome(unsigned long n)
     /* and a manipulable copy of input */
     int lastDig = 0;
     unsigned long int tempN = n, reverse = 0;
-    
-    /* work with positive numbers, logic the same */
-    /* probably not necessary for ulong */
-    if (n < 0)
-    {
-        n = n * -1;
-    }
 
     tempN = n;
 
