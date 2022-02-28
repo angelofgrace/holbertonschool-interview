@@ -11,7 +11,7 @@
  {
     int i, j, dhi, dwid;
 
-    if (!level || level < 0)
+    if (level < 0)
     {
         return;
     }
