@@ -1,10 +1,10 @@
-#ifndef MENGER.H
-#define MENGER.H
+#ifndef MENGER_H
+#define MENGER_H
 
-#include stdio.h
-#include math.h
+#include <stdio.h>
+#include <math.h>
 
 void menger(int level);
 
-/** Menger.h **/
+/** Menger_h **/
 #endif
