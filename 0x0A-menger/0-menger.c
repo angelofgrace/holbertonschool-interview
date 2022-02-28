@@ -9,35 +9,34 @@
  */
  void menger(int level)
  {
-    int i;
+    int i, j, dhi, dwid;
 
     if (!level || level < 0)
     {
         return;
     }
-    if (level == 0)
+    for (i = 0; i < pow(3, level); i++)
     {
-        printf("#");
-        return;
-    }
-    for (i = 0, i <= level*3, i++)
-    {
-        writeMenger(level);
-        return(menger(level - 1));
+        for (j=0; j < pow(3, level); j++)
+        {
+            dhi = i;
+            dwid = j;
+            while(1)
+            {
+                if (dhi % 3 == 1 && dwid % 3 == 1)
+                {
+                     printf(" ");
+                     break;
+                }
+                else if (dhi == 0 || dwid == 0)
+                {
+                    printf("$");
+                    break;
+                }
+                dhi /= 3;
+                dwid /= 3;
+            }
+        }
+        printf("\n");
     }
  }
-
-void writeMenger(level)
-{
-    int i, j;
-
-    while (j >= level)
-    {
-        for (i = 0, i < 9, i++)
-            if (i != 5)
-            {
-                printf("$");
-            }
-        j--
-    }
-}
