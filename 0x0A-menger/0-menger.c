@@ -15,6 +15,10 @@
     {
         return;
     }
+    else if (level == 0)
+    {
+        printf("#");
+    }
     for (i = 0; i < pow(3, level); i++)
     {
         for (j=0; j < pow(3, level); j++)
@@ -30,7 +34,7 @@
                 }
                 else if (dhi == 0 || dwid == 0)
                 {
-                    printf("$");
+                    printf("#");
                     break;
                 }
                 dhi /= 3;
