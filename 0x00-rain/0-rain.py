@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+"""
+Viewing a cross-sectoin of a relief map, how many square units of water will be retained after it rains
+"""
+
 def rain(walls):
     rainTotal = 0
     basinTotal = 0
