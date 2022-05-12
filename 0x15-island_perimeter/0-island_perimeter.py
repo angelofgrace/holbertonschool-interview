@@ -1,12 +1,11 @@
 #!/usr/bin/python3
 """
-Island Perimeter Algorithm Problem
-Recursive Solution
+Island Perimeter Algorithm Problem Recursive Solution
 """
 
 
 def count_sides(grid, i, j, perimeter):
-  """ Defining count_sides, it counts sides"""
+  """ Defining count_sides, it counts sides """
   grid[i][j] = 2
   if (i == 0 or grid[i-1][j] == 0):
     perimeter+=1
