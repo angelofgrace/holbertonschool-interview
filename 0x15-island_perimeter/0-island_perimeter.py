@@ -5,7 +5,7 @@ Island Perimeter Algorithm Problem Recursive Solution
 
 
 def count_sides(grid, i, j, perimeter):
-  """ Defining count_sides, it counts sides """
+  """Defining count_sides, it counts sides."""
   grid[i][j] = 2
   if (i == 0 or grid[i-1][j] == 0):
     perimeter+=1
@@ -26,7 +26,7 @@ def count_sides(grid, i, j, perimeter):
     count_sides(grid, i, j+1, perimeter)
     
 def island_perimeter(grid):
-  """ Defining island_perimeter, it finds the perimeter of the island """
+  """Defining island_perimeter, it finds the perimeter of the island."""
   perimeter = 0
   height = len(grid)
   width = len(grid[0])
