@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Island Perimeter Algorithm Problem Recursive Solution"""
+""" Island Perimeter Algorithm Problem Recursive Solution. """
 
 
 def count_sides(grid, i, j, perimeter):
